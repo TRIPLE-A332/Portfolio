@@ -186,14 +186,14 @@ html {
 }
 
 #hero__animation {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  aspect-ratio: 1/1; /* Keeps it square, but responsive */
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 25rem;
-  height: 25rem;
-  margin: 0 auto;
-  animation: hover 1.5s infinite ease-in-out;
 }
 
 #hero__animation__img {
@@ -201,9 +201,16 @@ html {
   height: 100%;
   background-image: var(--tl-1);
   background-position: center;
-  background-size: cover;
+  background-size: contain; /* Show the whole image */
   background-repeat: no-repeat;
-  border-radius: 12px; /* optional: if you want soft edges */
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  #hero__animation {
+    max-width: 90vw;
+    aspect-ratio: 1/1;
+  }
 }
 
 

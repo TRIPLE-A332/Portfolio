@@ -65,6 +65,7 @@ p {
 .hello-3 { animation-delay: 1s; }
 .hello-4 { animation-delay: 1.5s; }
 .hello-5 { animation-delay: 2s; }
+.hello-6 { animation-delay: 2.5s; }
 
 @keyframes rotateHello {
   0%   { opacity: 0; transform: translateY(10px); }
